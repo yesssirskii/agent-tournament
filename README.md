@@ -33,3 +33,8 @@ The states are:
     * If the agent has the enemy flag, a shortest path algorithm (breadth-first) is used to make it back home as fast as possible.
 * Random state
     * The agent navigates around to where the flag is likely to be. If it can’t find it, it searches the whole world until it is entirely explored.
+ 
+### Agent movement algorithm
+
+The agents move corresponding to the state they are in. While the agent moves around the world, the positions are stored in a knowledge base.  
+Later, when the agent captures the enemy's flag, the positions stored in the knowledge base are reversed and used as a path for the agent to get back home. This is accomplished using a breadth-first algorithm.
