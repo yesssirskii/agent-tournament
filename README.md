@@ -1,5 +1,9 @@
 # Agent tournament
 
+## Run
+
+```python3 main.py```
+
 ## Overview
 Agent tournament is a 2D 'capture the flag' python game with 2 agents; blue agent and red agent.
 
@@ -29,7 +33,3 @@ The states are:
     * If the agent has the enemy flag, a shortest path algorithm (breadth-first) is used to make it back home as fast as possible.
 * Random state
     * The agent navigates around to where the flag is likely to be. If it can’t find it, it searches the whole world until it is entirely explored.
-
-## Run
-
-```python3 main.py```
